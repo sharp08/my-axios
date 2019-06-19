@@ -8,8 +8,8 @@
  * @description: 用法
  * @param {String} url 请求路径
  * @param {Object} params 参数  (直接传就行，内部已做处理)
- * @param {Object} options 配置项（可以覆盖默认值）
- * @param {Boolean} loading 是否启用 loading
+ * @param {Object} options 配置项（可以覆盖 axios 默认配置，见 axios 文档）
+ * @param {Boolean} loading 是否启用内部封装的 loading
  * @return: 
  */ 
 
