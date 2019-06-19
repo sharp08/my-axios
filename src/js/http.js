@@ -76,7 +76,7 @@ const core = method => {
     } else if (method === "post") {
         return (url, data, options, loading = true) => {
             o = {
-                url, method, data, ...options
+                url, method, data: data || {}, ...options       //  这里灰常重要，axios 存在无法设置 content-type 的 bug，需要对 data 进行处理
             }
             return common(o, loading)
         }
