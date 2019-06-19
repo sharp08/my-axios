@@ -1,6 +1,6 @@
 # my-axios
-1.内部封装了一个 loading 蒙层，可通过配置关闭蒙层
-2.请求的接口来自 https://easy-mock.com
+- 内部封装了一个 `loading` 蒙层，可通过配置关闭蒙层
+- 请求的接口来自 [easy-mock](https://easy-mock.com)
 
 ## Project setup
 ```
