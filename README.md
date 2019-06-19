@@ -1,4 +1,6 @@
 # my-axios
+1.内部封装了一个 loading 蒙层，可通过配置关闭蒙层
+2.请求的接口来自 https://easy-mock.com
 
 ## Project setup
 ```
@@ -7,12 +9,12 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn run build
+yarn build
 ```
 
 ### Run your tests

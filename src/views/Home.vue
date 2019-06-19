@@ -1,18 +1,33 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click="click('get')">get</button>
+    <button @click="click('post')">post</button>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  name: "home",
+  data() {
+    return {};
+  },
+  methods: {
+    click(type) {
+      if (type === "get") {
+        $http.get("abccc", { a: 1, b: 2 });
+      } else if (type === "post") {
+        $http.post("postDemo", { a: 1, b: 2 });
+      }
+    }
   }
-}
+};
 </script>
+<style>
+button {
+  height: 100px;
+  width: 100px;
+  margin: 100px;
+  font-size: 30px;
+}
+</style>
+
